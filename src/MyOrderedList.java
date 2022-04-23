@@ -29,14 +29,14 @@ public class MyOrderedList<Type extends Comparable <Type>> {
     private Type binarySearch(Type item, int start, int end) {
         if (start > end) {
             comparisons++;
-            return false;
+            return null;
         }
 
         comparisons++;
         int mid = start + (end - start) / 2;
         if (list.get(mid).compareTo(item) == 0) {
             comparisons++;
-            return true;
+            return list.get(mid);
         }
 
         comparisons++;
