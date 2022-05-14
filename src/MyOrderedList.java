@@ -57,9 +57,7 @@ public class MyOrderedList<Type extends Comparable <Type>> {
         return comparisons;
     }
     public Type get(int index) {
-        if(index < 0 || index >= list.size()) {
-            return list.get(index);
-        } return null;
+        return list.get(index);
     }
     public String toString() {
         return list.toString();

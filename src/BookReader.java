@@ -13,6 +13,7 @@ public class BookReader {
     public void parseBook() {
         long start, finish, difference;
         start = System.currentTimeMillis();    // Starts timer.
+        System.out.println("Reading input file...");
         int size = 0;
         char[] charArray = book.toCharArray();
         String word = "";
@@ -61,6 +62,7 @@ public class BookReader {
         File file = new File(String.valueOf(theBook));
         long start, finish, difference;
         start = System.currentTimeMillis();    // Starts timer.
+        System.out.println("Reading unique words...");
         BufferedReader br = new BufferedReader(new FileReader(file));
         StringBuilder sb = new StringBuilder();
         int c = 0;
